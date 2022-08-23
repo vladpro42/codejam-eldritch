@@ -19,6 +19,7 @@ html {
   max-width: 1820px;
   padding: 0 10px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .main__inner {
@@ -27,6 +28,7 @@ html {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  height: 100%;
 }
 
 .ancient {
@@ -54,6 +56,7 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  display: none;
 }
 
 .difficulty-level__btn {
@@ -93,11 +96,12 @@ html {
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 20px;
+  display: none;
 }
 
-/* -------------*/
 .tracker {
   margin-bottom: 20px;
+  display: none;
 }
 
 .stage {
@@ -142,8 +146,36 @@ html {
   background-color: blue;
 }
 
+.card-deck {
+  display: none;
+}
+
 .card-deck__shirt {
   width: 100%;
+}
+
+.display_activ {
+  display: flex;
+}
+
+._activ {
+  border: 2px solid blueviolet;
+}
+
+.difficulty-level__btn_activ {
+  border: 2px solid blueviolet;
+}
+
+.tracker_activ {
+  display: block;
+}
+
+.cardDeck_activ {
+  display: block;
+}
+
+.shuffle-deck__btn_activ {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
