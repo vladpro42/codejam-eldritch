@@ -1,0 +1,131 @@
+@import './apendts';
+
+html { 
+    box-sizing: border-box;
+}
+
+*, *::after, *::before { 
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background: url('/codejam-eldritch/project/images/background/home.png'), no-repeat;
+    width: 1920px;
+    height: 1080px;
+}
+
+.container {
+    max-width: 1920px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.main__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.ancient {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ancient__hero {
+    max-width: 100%;
+    &:hover{
+        border: 1px solid red;
+    }
+}
+
+.difficulty-level {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.difficulty-level__btn {
+    @include fonBtn;
+    & + & {
+        margin-top: 20px
+    }
+}
+
+.btn {
+    @include styleBtn;
+}
+
+.shuffle-deck {
+    
+}
+.shuffle-deck__btn {
+}
+
+/* -------------*/
+.tracker {
+    
+}
+.stage {
+    & + & {
+        margin-top: 20px;
+    }
+}
+.stage__one {
+}
+
+.stage__title {
+    @include fonBtn;
+    font-size:  26px;
+}
+
+/* .circle__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.circle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    & + & {
+        margin-left: 20px;
+    }
+}
+
+.circle_green {
+    background-color: green;
+}
+
+.circle_brown {
+    background-color: brown;
+}
+
+.circle_blue {
+    background-color: blue;
+}
+
+.stage__two {
+}
+.stage__three {
+}
+.card-deck {
+}
+.card-deck__shirt {
+}
+.card-deck__shirt-img {
+}
+.card-deck__face {
+}
+.card-deck__face-img {
+}
