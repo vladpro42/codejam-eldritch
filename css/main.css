@@ -1,0 +1,181 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background: url("../images/background/home.png"), no-repeat;
+  width: 1920px;
+  height: 1080px;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1820px;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.main__inner {
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 100%;
+}
+
+.ancient {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ancient__hero {
+  width: 80%;
+}
+.ancient__hero:hover {
+  border: 1px solid red;
+}
+
+.hero__img {
+  max-width: 100%;
+}
+
+.difficulty-level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
+
+.difficulty-level__btn {
+  text-align: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+.difficulty-level__btn + .difficulty-level__btn {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid rgba(128, 128, 128, 0.8);
+  border-radius: 10px;
+  min-width: 250px;
+  height: 50px;
+}
+.btn:hover {
+  border-color: rgb(128, 128, 128);
+}
+
+.shuffle-deck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.shuffle-deck__btn {
+  text-align: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.tracker {
+  margin-bottom: 20px;
+  display: none;
+}
+
+.stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.stage + .stage {
+  margin-top: 20px;
+}
+
+.stage__title {
+  text-align: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.circle + .circle {
+  margin-left: 20px;
+}
+
+.circle_green {
+  background-color: green;
+}
+
+.circle_brown {
+  background-color: brown;
+}
+
+.circle_blue {
+  background-color: blue;
+}
+
+.card-deck {
+  display: none;
+}
+
+.card-deck__shirt {
+  width: 100%;
+}
+
+.display_activ {
+  display: flex;
+}
+
+._activ {
+  border: 2px solid blueviolet;
+}
+
+.difficulty-level__btn_activ {
+  border: 2px solid blueviolet;
+}
+
+.tracker_activ {
+  display: block;
+}
+
+.cardDeck_activ {
+  display: block;
+}
+
+.shuffle-deck__btn_activ {
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */
