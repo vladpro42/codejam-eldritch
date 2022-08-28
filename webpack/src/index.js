@@ -1,3 +1,4 @@
+alert('Работает 1 древний и Очень легкий уровень сложности');
 import ancientsData from '../../data/ancients';
 import difficulties from '../../data/difficulties';
 import blueCardsData from '../../data/mythicCards/blue/index';
